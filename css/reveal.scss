@@ -1832,15 +1832,23 @@ $notesWidthPercent: 25%;
 
 .game-button {
 	display:block;
-	width: 48%;
+	width: 40%;
 	margin-right: 2%;
 	float: left;
+}
+
+.ticket-colour{
+	background-color: silver;
 }
 
 .black-back {
 	background-color: black;
 	padding:20px;
 	border-radius: 3px;
+}
+
+.ticket-colour.gold {
+	background-color: gold;
 }
 
 .game-button.aztec {

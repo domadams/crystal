@@ -175,7 +175,8 @@
 					<video data-autoplay src="video/theDome.mp4"></video>
 				</section>
 				<section data-background-image="images/crystalDom.png" >
-
+					<p id="ticket" class="ticket-colour">Ticket Colour!</p>
+					<div class="back-button" id="submit">Start</div>
 				</section>
 			</div>
 		</div>
@@ -274,6 +275,29 @@
 					}
 				};
 			})(jQuery);
+
+			var interval = true;
+			var test = setInterval(function() {
+				$("#ticket").toggleClass("gold");
+			}, 100);
+			function start() {
+				var submit = document.getElementById("submit");
+				submit.addEventListener("click", stop);
+			};
+
+			function stop() {
+				if (interval) {
+					clearInterval(test);
+					interval = false;
+				} else {
+					test = setInterval(function() {
+						$("#ticket").toggleClass("gold");
+					}, 80);
+					interval = true;
+				}
+			};
+
+			start();
 		</script>
 	</body>
 </html>
