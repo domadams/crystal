@@ -16,8 +16,126 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					Welcome!!
+				</section>
+				<section data-transition="zoom" data-autoslide="31500" data-background-image="images/crystalDom.png" >
+					<video data-autoplay="true" width="1600px" src="video/CrystalIntro.mp4"></video>
+				</section>
+				<section data-background-image="images/crystalDom.png" >
+					WELCOME TO THE CONSUMER SERVICING SOCIAL <br/> with hosts Dom!
+				</section>
+				<section data-transition="zoom" data-autoslide="14500" data-background-image="images/crystalDom.png">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+					<video data-autoplay src="video/Aztec.mp4"></video>
+				</section>
+				<section data-background-image="images/aztec.jpg">
+					<audio data-autoplay="true" src="/audio/aztec.mp3"></audio>
+					<section id="aztec-home">
+						<a class="game-button aztec" href="#/aztec-game-1">Physical</a>
+						<a class="game-button aztec" href="#/aztec-game-2">Mental</a>
+					</section>
+					<section id="aztec-game-1">
+						<span class="countdown" data-seconds="60"></span>
+						<div class="r-stack">
+							<p class="fragment current-visible">Your challenge is to find these 5 items as a team to win a crystal</p>
+							<ul class="fragment current-visible">
+								<li>Pillow Case</li>
+								<li>Ladel</li>
+								<li>Toothbrush</li>
+								<li>Mug</li>
+								<li>Newspaper</li>
+							</ul>
+							<a class="fragment current-visible back-button" href="#/aztec-home">Back to the Zone!!</a>
+						</div>
+					</section>
+					<section id="aztec-game-2">
+						<span class="countdown" data-seconds="60"></span>
+						<div class="r-stack">
+							<p class="fragment fade-out current-visible zoom-in" data-fragment-index="0">
+								First to answer this riddle in 60 seconds get a Crystal!
+								Hands up please!
+							</p>
+							<p class="fragment current-visible zoom-in">
+								I have keys that open no locks </br>
+								Space but no room </br>
+								You can enter but cannot go in
+							</p>
+							<a class="fragment current-visible back-button" href="#/aztec-home">Back to the Zone!!</a>
+						</div>
+					</section>
+				</section>
+				<section data-transition="zoom" data-autoslide="10500" data-background-image="images/crystalDom.png">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+					<video data-autoplay src="video/Ocean.mp4"></video>
+				</section>
+				<section data-background-image="images/ocean.jpg">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+					<section id="ocean-home">
+						<a class="game-button aztec" href="#/ocean-game-2">Mental</a>
+						<a class="game-button aztec" href="#/ocean-game-1">Skill</a>
+					</section>
+					<section id="ocean-game-2">
+						<span class="countdown" data-seconds="60"></span>
+						<div class="r-stack">
+							<p class="fragment current-visible"></p>
+							<ul class="fragment current-visible">
+								<li>Pillow Case</li>
+								<li>Ladel</li>
+								<li>Toothbrush</li>
+								<li>Mug</li>
+								<li>Newspaper</li>
+							</ul>
+							<a class="fragment current-visible back-button" href="#/ocean-home">Back to the Zone!!</a>
+						</div>
+					</section>
+					<section id="ocean-game-1">
+						<div class="r-stack">
+							<p class="fragment fade-out current-visible zoom-in" data-fragment-index="0">
+								Best of three against the other team at Rock Paper Scissors
+							</p>
+							<a class="fragment current-visible back-button" href="#/aztec-home">Back to the Zone!!</a>
+						</div>
+					</section>
+				</section>
+				<section data-transition="zoom" data-autoslide="10500" data-background-image="images/crystalDom.png">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+					<video data-autoplay src="video/Medieval.mp4"></video>
+				</section>
+				<section data-background-image="images/MedievalZone.jpeg">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+					<section id="medieval-home">
+						<a class="game-button aztec" href="#/medieval-game-2">Mental</a>
+						<a class="game-button aztec" href="#/medieval-game-1">Physical</a>
+					</section>
+					<section id="medieval-game-2">
+						<span class="countdown" data-seconds="60"></span>
+						<div class="r-stack">
+							<p class="fragment fade-out current-visible zoom-in" data-fragment-index="0">
+								First to answer this riddle in 60 seconds get a Crystal!
+							</p>
+							<p class="fragment current-visible zoom-in">
+								A man is four times older than his daughter.</br>
+								In 20 years time he will be twice as old as her.</br>
+								How old are the man and daughter?
+							</p>
+						</div>
+					</section>
+				</section>
+				<section data-transition="zoom" data-autoslide="10500" data-background-image="images/crystalDom.png">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+					<video data-autoplay src="video/Futuristic.mp4"></video>
+				</section>
+				<section data-background-image="images/futuristic.jpg">
+					<audio data-autoplay="true" src="/audio/backgroundCrystal.mp3"></audio>
+
+				</section>
+				<section data-transition="zoom" data-autoslide="10500" data-background-image="images/crystalDom.png">
+					<video data-autoplay src="video/theDome.mp4"></video>
+				</section>
+				<section data-background-image="images/crystalDom.png" >
+
+				</section>
 			</div>
 		</div>
 
@@ -33,8 +151,88 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				dependencies: [
+					{ src: "plugin/countdown/countdown.js" },
+				],
+				countdown: { defaultTime: 600, autostart: "no" }
 			});
+		</script>
+		<script
+				src="https://code.jquery.com/jquery-3.5.1.min.js"
+				integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+				crossorigin="anonymous">
+		</script>
+		<script type="text/javascript">
+			(function($) {
+				$('body').on('keydown', function(e) {
+					// "0"
+					if(e.keyCode === 48) {
+						countdown.toggle($('.countdown', Reveal.getCurrentSlide()));
+					}
+				});
+
+				Reveal.addEventListener('slidechanged', function(event) {
+					var target = jQuery('.countdown', event.currentSlide);
+
+					if(target.length) {
+						countdown.init(target);
+					}
+				});
+
+				var countdown = {
+					running   : false,
+					interval  : null,
+
+					init : function init(target) {
+						var remaining = target.data('seconds');
+						this.render(target, remaining);
+					},
+
+					render : function render(target, remaining) {
+						var minutes = Math.floor(remaining / 60);
+						var seconds = remaining - (minutes * 60);
+
+						// 25 minutes 58 seconds
+						target.text([minutes, 'minutes', seconds, 'seconds remaining'].join(' '));
+					},
+
+					toggle : function toggle(target) {
+						if(target.length) {
+							if(this.running) {
+								this.stop(target);
+							}
+							else {
+								this.play(target);
+							}
+						}
+					},
+
+					play : function play(target) {
+						var self       = this;
+						var remaining  = target.data('seconds');
+
+						this.running   = true;
+						this.interval  = setInterval(function timer() {
+							remaining -= 1;
+
+							if(remaining <= 0) {
+								self.stop(target);
+								return;
+							}
+
+							self.render(target, remaining);
+						}, 1000);
+					},
+
+					stop : function stop(target) {
+						this.running   = false;
+						clearInterval(this.interval);
+
+						target.text('All finished!');
+					}
+				};
+			})(jQuery);
 		</script>
 	</body>
 </html>

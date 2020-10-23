@@ -1811,6 +1811,55 @@ $notesWidthPercent: 25%;
 	visibility: hidden;
 }
 
+.reveal a.back-button {
+	color: #2aa198;
+}
+
+.reveal a.back-button:hover {
+	color: whitesmoke;
+	border: solid 3px #2aa198;
+	border-radius: 3px;
+}
+
+.back-button {
+	display:block;
+	width: 50%;
+	background: lightblue;
+	color: darkblue;
+	border-radius: 3px;
+	border: solid 3px #2aa198;
+}
+
+.game-button {
+	display:block;
+	width: 31%;
+	margin-right: 2%;
+	float: left;
+}
+
+.game-button.aztec {
+	background: burlywood;
+	border: 5px solid brown;
+}
+
+.reveal a.game-button {
+	color: #2aa198;
+}
+
+.reveal a.game-button.aztec:hover {
+	color: azure;
+	border: 5px solid brown;
+}
+
+.countdown {
+	position: absolute;
+	top: -6em;
+	right: -4em;
+	font-size: 40px;
+	background: #1a6091;
+	padding:5px;
+}
+
 
 /*********************************************
  * PRINT STYLES
